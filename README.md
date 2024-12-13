@@ -63,7 +63,7 @@ The **PlantVillage dataset** contains over 50,000 images of healthy and diseased
 
 3. **Model Training**:
    - Developed a CNN model with transfer learning (using pre-trained architectures like ResNet and VGG).
-   - Split dataset: 80% training, 10% validation, 10% testing.
+   - Split dataset: 70% training, 20% validation, 10% testing.
    - Used techniques like dropout and batch normalization to prevent overfitting.
 
 4. **Model Evaluation**:
@@ -79,16 +79,11 @@ The **PlantVillage dataset** contains over 50,000 images of healthy and diseased
 ## **Model Architecture and Selection**
 We experimented with various CNN architectures:
 1. **Custom CNN**:
-   - A 5-layer architecture optimized for this specific dataset.
-   - Achieved ~85% validation accuracy.
+   - Achieved ~95% validation accuracy.
    
-2. **Pre-Trained Models**:
-   - ResNet-50: Achieved 93% validation accuracy.
-   - VGG16: Achieved 91% validation accuracy.
-   - Selected ResNet-50 for deployment due to higher accuracy and better generalization.
+2. **Xception**:
+   - Achieved 93% validation accuracy.
 
-**Hyperparameter Tuning**:
-- Optimized learning rate, batch size, and dropout rate using GridSearchCV.
 
 ---
 ---
@@ -102,7 +97,7 @@ Ensure you have the following installed:
 ### **Setup Instructions**
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/plant-disease-detection.git
+   git clone https://github.com/pSaurav10/amlfinal.git
    cd plant-disease-detection
 
 ## **Installation**
@@ -111,11 +106,6 @@ Ensure you have the following installed:
 ```bash
 pip install -r requirements.txt
 ```
-
-## **Download the Dataset**
-Download the PlantVillage dataset and place it in the `data/` directory.
-
----
 
 ## **Run the Training Script**
 ```bash
